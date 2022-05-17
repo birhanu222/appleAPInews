@@ -5,7 +5,7 @@ function AppleNews() {
     const [AppleNews, AddAppleNews] = useState([]);
 
     useEffect(() => {
-        fetch("https://newsapi.org/v2/everything?q=apple&from=2021-07-11&to=2021-07-11&pageSize=6&sortBy=popularity&apiKey=b1b836441bd94ecebaa84daa7413641c")
+        fetch("https://newsapi.org/v2/everything?q=apple&from=2021-07-11&to=2021-07-11&pageSize=6&sortBy=popularity&apiKey=*")
         .then((Response) => Response.json())
         .then((data) => {
             console.log(data)
